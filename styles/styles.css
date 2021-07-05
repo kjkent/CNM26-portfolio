@@ -1,0 +1,39 @@
+* {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+}
+
+.image {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 50%;
+}
+
+h2 {
+    font-family: 'Staatliches', cursive;
+}
+
+ul, ol {
+   display: inline-block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+li {
+    text-align:left;
+}
+
+h3 {
+    font-family: 'Staatliches', cursive;
+}
