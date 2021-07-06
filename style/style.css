@@ -1,3 +1,7 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 #splash{
     margin: 0;
     width: 97vw;
@@ -5,7 +9,6 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 50px 1fr 1fr 1fr 50px;
-    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -44,4 +47,21 @@
     grid-row-end: 4;
     
     
+}
+
+#aboutMe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projectBox {
+    width: 400px;
 }
