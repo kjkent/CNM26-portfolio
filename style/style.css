@@ -1,0 +1,30 @@
+#splash{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    border: 5px solid gold;
+}
+
+#verticalName {
+    font-size: 200px;
+    font-weight: bold;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+    color: grey;
+    align-self: flex-end;
+    margin-bottom: 150px;
+    margin-left: -100px; 
+    border: 5px solid gold;
+}
+
+#splashText{
+    width: 80vh;
+    font-size: 2em;
+    text-align: center;
+    align-self: center;
+    border: 5px solid gold;
+}
