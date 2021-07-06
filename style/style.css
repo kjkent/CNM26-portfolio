@@ -52,7 +52,12 @@
 #aboutMe {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+}
+
+.aboutMeBox {
+    width: 4000px;
+    font-size: 1.1em;
+    text-align: justify;
 }
 
 #projects {
