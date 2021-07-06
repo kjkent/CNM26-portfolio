@@ -1,30 +1,47 @@
 #splash{
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
+    margin: 0;
+    width: 97vw;
+    height: 97vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 1fr 50px;
     font-family: 'Roboto', sans-serif;
-    border: 5px solid gold;
+
 }
 
-#verticalName {
-    font-size: 200px;
-    font-weight: bold;
+#header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 2em;
+}
+
+#verticalContainer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+#verticalText {
     -webkit-transform: rotate(270deg);
     -moz-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
     -o-transform: rotate(270deg);
     transform: rotate(270deg);
+    font-size: 200px;
+    font-weight: bold;
     color: grey;
-    align-self: flex-end;
-    margin-bottom: 150px;
-    margin-left: -100px; 
-    border: 5px solid gold;
+    text-align: left;
 }
 
 #splashText{
-    width: 80vh;
-    font-size: 2em;
-    text-align: center;
     align-self: center;
-    border: 5px solid gold;
+    text-align: center;
+    font-size: 2em;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    
+    
 }
