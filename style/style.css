@@ -13,12 +13,35 @@
 }
 
 #header {
+    display: flex;
+    flex-direction: column;
     grid-column-start: 1;
     grid-column-end: 4;
-    font-size: 2em;
+}
+
+#hamburger {
+    margin-top: 6px;
+    margin-right: 10px;
+    align-self: flex-end;
+}
+.ham {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+#menu {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: right;
+    margin-right: 8px;
 }
 
 #verticalContainer {
+    display: grid;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
@@ -26,27 +49,106 @@
 }
 
 #verticalText {
-    -webkit-transform: rotate(270deg);
+    align-self: end;
+    justify-self: start;
+    /* -webkit-transform: rotate(270deg);
     -moz-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
     -o-transform: rotate(270deg);
-    transform: rotate(270deg);
+    transform: rotate(270deg); */
     font-size: 200px;
     font-weight: bold;
     color: grey;
-    text-align: left;
+}
+
+.blinking-cursor {
+    -webkit-animation: 0.7s blink step-end infinite;
+    -moz-animation: 0.7s blink step-end infinite;
+    -ms-animation: 0.7s blink step-end infinite;
+    -o-animation: 0.7s blink step-end infinite;
+    animation: 0.7s blink step-end infinite;
+}
+  
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+      color: grey;
+    }
+} 
+@-moz-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: grey;
+    }
+}
+@-webkit-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: grey;
+    }
+}
+@-ms-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: grey;
+    }
+} 
+@-o-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: grey;
+    }
 }
 
 #splashText{
     align-self: center;
-    text-align: center;
+    text-align: right;
     font-size: 2em;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
     
-    
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+  
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+  
+ @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+  
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+  
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 #aboutMe {
@@ -64,9 +166,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .projectBox {
-    width: 400px;
+    width: 400px
 }
