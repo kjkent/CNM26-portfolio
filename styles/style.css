@@ -43,6 +43,7 @@ body {
 }
 
 #hamburger {
+    cursor: pointer;
     margin-top: 6px;
     margin-right: 10px;
     align-self: flex-end;
@@ -54,7 +55,8 @@ body {
     margin: 6px 0;
 }
 
-#menu {
+#hamburgerMenu {
+    display: none;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
