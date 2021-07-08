@@ -2,6 +2,30 @@
     font-family: 'Roboto', sans-serif;
 }
 
+a:link {
+    color: darkgrey;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: darkgrey;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode{
+    background-color: rgb(18, 18, 18);
+    color: white;
+}
+
 #splash{
     width: 100vw;
     height: 98vh;
@@ -26,7 +50,7 @@
 .ham {
     width: 35px;
     height: 5px;
-    background-color: black;
+    background-color: darkgrey;
     margin: 6px 0;
 }
 
@@ -37,7 +61,11 @@
     grid-row-end: 3;
     text-align: right;
     margin-right: 10px;
-    font-size: 1.25rem;
+    font-size: 2rem;
+}
+
+#dmButton {
+    cursor: pointer;
 }
 
 #splashText{
