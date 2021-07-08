@@ -177,15 +177,14 @@ body {
     flex-direction: row;
     align-items: center;
     font-size: 1.25rem;
-    max-width: 100vw;
     text-align: right;
-    border: 5px solid lightgrey;
+    min-height: 25vh;
     margin-top: 20px;
     padding: 20px;
 }
 #aboutHeader {
     font-size: 3rem;
-    padding-left: 50px;
+    padding-left: 75px;
 }
 #aboutText {
     padding-left: 20vw;
@@ -195,13 +194,12 @@ body {
     display:flex;
     flex-direction: row-reverse;
     align-items: center;
-    border: 5px solid lightgrey;
-    margin-top: 20px
+    min-height: 75vh;
 }
 #projectsHeader {
     font-size: 3rem;
     padding-left: 200px;
-    padding-right: 50px;
+    padding-right: 75px;
 }
 
 #projectBoxes {
@@ -228,7 +226,6 @@ body {
     font-size: 1.25rem;
     max-width: 100vw;
     padding: 20px;
-    border: 5px solid lightgrey;
 }
 #contactText {
     font-size: 2rem;
