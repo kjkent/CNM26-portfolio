@@ -194,7 +194,7 @@ body {
     display:flex;
     flex-direction: row-reverse;
     align-items: center;
-    min-height: 75vh;
+    min-height: 70vh;
 }
 #projectsHeader {
     font-size: 3rem;
